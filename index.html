@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter Ukuran Serba Bisa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Konverter Ukuran Serba Bisa</h1>
+        <div class="converter">
+            <select id="kategori">
+                <option value="">Pilih Kategori</option>
+                <option value="panjang">Panjang</option>
+                <option value="luas">Luas</option>
+                <option value="volume">Volume</option>
+                <option value="massa">Massa</option>
+                <option value="kecepatan">Kecepatan</option>
+                <option value="waktu">Waktu</option>
+                <option value="suhu">Suhu</option>
+            </select>
+
+            <div id="unit-converter" style="display: none;">
+                <input type="number" id="input-value" placeholder="Masukkan nilai">
+                <select id="unit-from"></select>
+                <span style="padding: 10px;">ke</span>
+                <select id="unit-to"></select>
+                <br>
+                <button id="convert-btn" style="margin-top: 20px;">Konversi</button>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
